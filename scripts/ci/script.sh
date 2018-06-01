@@ -1,13 +1,14 @@
 #!/bin/sh -e
 # Builds and tests PDAL
 
+apk update
+apk add alpine-sdk
 echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 echo "@edgecommunity http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories; \
-echo "@edgemain http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
+echo "@edgemain http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories; \
 apk update
 apk add \
     cmake \
-    alpine-sdk \
     eigen-dev@edgecommunity \
     hexer \
     hexer-dev \
