@@ -13,8 +13,8 @@ apk add \
     hexer-dev \
     nitro \
     nitro-dev \
-    gdal \
-    gdal-dev \
+    gdal@edgemain \
+    gdal-dev@edgemain \
     geos \
     geos-dev \
     laz-perf \
